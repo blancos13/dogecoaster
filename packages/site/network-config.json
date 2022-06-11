@@ -1,0 +1,28 @@
+{
+    "testnet": {
+        "nodes": [],
+        "contracts": {
+            "dogecoaster": {
+                "address": "",
+                "abi": []
+            },
+            "weee": {
+                "address": "",
+                "abi": []
+            }
+        }
+    },
+    "mainnet": {
+        "nodes": [],
+        "contracts": {
+            "dogecoaster": {
+                "address": "",
+                "abi": []
+            },
+            "weee": {
+                "address": "",
+                "abi": []
+            }
+        }
+    }
+}

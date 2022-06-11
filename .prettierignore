@@ -1,0 +1,10 @@
+node_modules
+artifacts
+cache
+coverage*
+gasReporterOutput.json
+packages/contracts/artifacts
+packages/contracts/cache
+packages/contracts/flattened
+packages/contracts/typechain
+yarn.lock

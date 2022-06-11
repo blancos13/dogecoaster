@@ -1,0 +1,47 @@
+{
+    "name": "@dogecoaster/contracts",
+    "version": "0.0.0",
+    "description": "Dogecoaster smart contracts",
+    "author": "The SmartDoge Team",
+    "license": "MIT",
+    "types": "types.d.ts",
+    "scripts": {
+        "clean": "rm -rf artifacts cache typechain flattened",
+        "compile": "hardhat compile",
+        "dev": "concurrently \"hardhat node\" \"sleep 2 && yarn dev:deploy\"",
+        "dev:deploy": "TS_NODE_TRANSPILE_ONLY=1 hardhat run --network localhost scripts/deploy.ts",
+        "flatten": "mkdir -p flattened && hardhat flatten contracts/Dogecoaster.sol > flattened/FlattenedDogecoaster.sol && hardhat flatten contracts/Weee.sol > flattened/FlattenedWeee.sol",
+        "test": "hardhat test"
+    },
+    "devDependencies": {
+        "@ethersproject/abi": "^5.6.2",
+        "@ethersproject/bytes": "^5.6.1",
+        "@ethersproject/providers": "^5.6.7",
+        "@nomiclabs/hardhat-ethers": "^2.0.0",
+        "@nomiclabs/hardhat-waffle": "^2.0.0",
+        "@truffle/hdwallet-provider": "^2.0.8",
+        "@typechain/ethers-v5": "^7.0.1",
+        "@typechain/hardhat": "^2.3.0",
+        "@types/chai": "^4.2.21",
+        "@types/fs-extra": "^9.0.13",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "^16.11.35",
+        "chai": "^4.2.0",
+        "concurrently": "^7.2.1",
+        "ethereum-waffle": "^3.0.0",
+        "ethers": "^5.0.0",
+        "fs-extra": "^10.1.0",
+        "hardhat": "^2.9.5",
+        "hardhat-gas-reporter": "^1.0.4",
+        "lodash": "^4.17.21",
+        "solhint": "^3.3.6",
+        "solidity-coverage": "^0.7.16",
+        "ts-node": "^10.1.0",
+        "typechain": "^5.1.2",
+        "typescript": "^4.6.4",
+        "web3": "^1.7.3"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.6.0"
+    }
+}

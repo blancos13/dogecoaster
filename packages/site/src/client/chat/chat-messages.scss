@@ -1,0 +1,13 @@
+.chat-messages-root {
+    flex-grow: 1;
+    font-size: 13px;
+    height: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+
+    &::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar space */
+        background: transparent; /* Optional: just make scrollbar invisible */
+    }
+}
